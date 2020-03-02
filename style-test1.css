@@ -1,0 +1,55 @@
+a {
+  color:orange;
+  text-decoration: none;
+}
+h1 {
+  font-size:85px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:50px;
+  }
+h2 {
+  font-size:20px;
+}
+  ol{
+    border-right:1px solid gray;
+    width:90px;
+    margin:0;
+    padding:30px;
+    border-bottom:1px solid gray;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left: 33px;
+  }
+  #grid #article{
+    padding-left:25px
+  }
+
+	.img{
+	    position: relative;
+	    background-image: url(https://cdn.pixabay.com/photo/2016/09/25/18/26/a-couple-of-1694334_960_720.jpg);
+	    height: 120vh;
+	    background-size: cover;
+	}
+	.img-cover{
+	   position: absolute;
+	   height: 100%;
+	   width: 100%;
+	   background-color: rgba(0, 0, 0, 0.4);
+	   z-index:1;
+	}
+	.img .content{
+	     position: absolute;
+	     top:50%;
+	     left:50%;
+	     transform: translate(-50%, -50%);
+	     font-size:1rem;
+	     color: #FAF5C5;
+	     z-index: 2;
+	     text-align: left;
+	}
